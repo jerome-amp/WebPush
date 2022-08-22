@@ -29,8 +29,6 @@ self.addEventListener('notificationclick', (event) =>
 		{
 			for(const client of list)
 			{
-				console.log(client.url);
-				
 				if(client.url === event.notification.data.link) return client.focus();
 			}
 			
