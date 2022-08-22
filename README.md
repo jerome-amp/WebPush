@@ -2,6 +2,8 @@
 
 ```
 
+require 'WebPush.php';
+
 $payload = json_encode(
 [
 	'tag' => 'tag',
