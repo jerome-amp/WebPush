@@ -53,7 +53,7 @@ class WebPush
 		[
 			'curve_name' => 'prime256v1',
 			'private_key_type' => OPENSSL_KEYTYPE_EC,
-			'config' => 'C:\Xampp\php\extras\ssl\openssl.cnf'
+		#	'config' => '\path\to\openssl.cnf'
 		]);
 		
 		$public = openssl_pkey_get_public(openssl_pkey_get_details($private)['key']);
